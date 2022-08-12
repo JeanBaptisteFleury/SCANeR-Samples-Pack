@@ -84,6 +84,14 @@
           <value>ego_camera_views.cam</value>
         </Argument>
       </Process>
+      <Process>
+        <exe>${STUDIO_PATH}/SCANeRstudio_2022/bin/x64/TrafficTools.exe</exe>
+        <name>TRAFFIC_TOOLS</name>
+        <port>25109</port>
+        <protocol></protocol>
+        <Environment/>
+        <Display/>
+      </Process>
     </Computer>
   </Processes>
 
@@ -102,6 +110,9 @@
       </Selected>
       <Selected>
         <processName>UXDRENDER</processName>
+      </Selected>
+      <Selected>
+        <processName>TRAFFIC_TOOLS</processName>
       </Selected>
     </DefaultProcesses>
   </Setup>
@@ -130,6 +141,9 @@
     </Module>
     <Module>
       <processName>CAMERA</processName>
+    </Module>
+    <Module>
+      <processName>TRAFFIC_TOOLS</processName>
     </Module>
   </ProcessGroups>
 
